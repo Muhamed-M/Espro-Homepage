@@ -1,0 +1,85 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;500;600;700&family=Josefin+Sans:wght@400;700&family=Nunito:wght@300;400;500;700;800&display=swap");
+
+@font-face {
+	font-family: "Brandon Grotesque";
+	src: url("../fonts/BrandonGrotesque-Black.woff2") format("woff2"),
+		url("../fonts/BrandonGrotesque-Black.woff") format("woff");
+	font-weight: 900;
+	font-style: normal;
+	font-display: swap;
+}
+
+/* Variables */
+:root {
+	/* Fonts */
+	--font-1: "Barlow Condensed", sans-serif;
+	--font-2: "Brandon Grotesque", sans-serif;
+	--font-3: "Josefin Sans", sans-serif;
+	--font-4: "Nunito", sans-serif;
+
+	/* Colors */
+	--color-1: #8db9ca;
+	--color-2: #659ab1;
+	--text-color: #221f20;
+}
+
+html {
+	font-size: 14px;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+ul {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+.container {
+	max-width: 1440px;
+	margin: 0 auto;
+}
+
+.flex-between {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.section--pad-y {
+	padding: 2.5rem;
+}
+
+.component-p {
+	font-family: var(--font-4);
+	font-weight: 300;
+	font-size: 1.05rem;
+	color: var(--text-color);
+	margin-bottom: 2rem;
+}
+
+.component-p--white {
+	color: #fff;
+}
+
+.component-btn {
+	display: inline-block;
+	font-family: var(--font-3);
+	font-weight: bold;
+	font-size: 0.9rem;
+	padding: 1rem 1.75rem;
+	border-radius: 26px;
+	color: var(--text-color);
+	border: 1px solid var(--text-color);
+}
+
+.component-btn--bg-white {
+	border: none;
+	background-color: #fff;
+}
